@@ -35,13 +35,13 @@ describe('index.js', function () {
 
   describe('createFareMultiplier()', function () {
     it('returns a function', function () {
-      const fareMultiplier = createFareMultiplier(2);
+      const fareMultiplier = createFareMultiplier(2); // this is the function to return
 
       expect(fareMultiplier).to.be.a('function');
     });
 
     it('should multiply a given value using the created multiplier', function () {
-      const fareQuintupler = createFareMultiplier(5);
+      const fareQuintupler = createFareMultiplier(5); // this inner function now takes a new argument which in here is 5
 
       expect(fareQuintupler(5)).to.eql(25);
     });
