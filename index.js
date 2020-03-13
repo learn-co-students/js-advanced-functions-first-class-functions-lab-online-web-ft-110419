@@ -15,16 +15,11 @@ const createFareMultiplier = (a) => {
     return fareQuintupler
 }
 
-const fareDoubler = (a) => {
-    return a * 2
-}
+const fareDoubler = (a) => a * 2
 
-const fareTripler = (a) => {
-    return a * 3
-}
+const fareTripler = (a) => a * 3
 
 let selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers]
 const selectDifferentDrivers = (arrayOfDrivers, fn) => {
-
     return fn(arrayOfDrivers)
 }
